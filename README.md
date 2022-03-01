@@ -9,4 +9,4 @@
 
 ## RuleExecutor
 - 정의한 Rule들을 기반으로 Drools Rule을 생성한다.
-- 또한 생성한 입력받은 데이터를 생성한 Rule 기반으로 Rule Engine을 실행한다.
+- 또한 입력받은 데이터를 생성한 Rule 기반으로 Rule Engine을 실행하고 결과를 반환한다.
