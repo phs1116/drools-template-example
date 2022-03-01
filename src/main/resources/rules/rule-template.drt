@@ -1,0 +1,22 @@
+template header
+ruleName
+preRuleCondition
+condition
+
+package rules;
+import com.hwatu.droolstemplateexample.domain.RuleResult
+import java.util.Map;
+global org.slf4j.Logger logger;
+
+template "rule-tempalte"
+rule "rule:@{ruleName}"
+no-loop
+when
+  (@{preRuleCondition})
+  (@{condition})
+then
+  logger.debug("rule:{} is satisfied", @{ruleName});
+  insert(new RuleResult("@{ruleName}", true));
+end
+
+end template
